@@ -14,14 +14,12 @@
  */
 class DepthCalculator {
   calculateDepth(arr) {
-    let count;
     if (arr.length === 0) return 1;
     if (!Array.isArray(arr)) {
       return 0;
     } else {
-      count = 1 + Math.max(...arr.map(el => this.calculateDepth(el)));
+      return 1 + Math.max(...arr.map(el => this.calculateDepth(el)));
     }
-    return count;
   }
 }
 
