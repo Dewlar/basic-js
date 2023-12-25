@@ -18,7 +18,7 @@ function calculateHanoi(disks, turnsSpeed) {
   const turns = 2 ** disks - 1;
   const seconds = Math.floor(turns / turnsSpeed * 3600);
   return {
-    turns: 2 ** disks - 1,
+    turns: turns,
     seconds: seconds,
   };
 }
