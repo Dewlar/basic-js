@@ -15,7 +15,7 @@
  *
  */
 function isMAC48Address(inputString) {
-  const macAddressPattern = /[A-F0-9]{2}-[A-F0-9]{2}-[A-F0-9]{2}-[A-F0-9]{2}-[A-F0-9]{2}-[A-F0-9]{2}/g;
+  const macAddressPattern = /^[A-F0-9]{2}(-[A-F0-9]{2}){5}$/g;
   return macAddressPattern.test(inputString);
 }
 
